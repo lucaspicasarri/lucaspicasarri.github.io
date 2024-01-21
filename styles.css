@@ -64,6 +64,15 @@ a:hover {
   text-decoration: underline;
 }
 
+a.people {
+  color: inherit; /* Utilise la couleur héritée du texte parent */
+  text-decoration: none; /* Supprime la décoration par défaut des liens */
+}
+
+a.people:hover {
+  text-decoration: underline; /* Souligne le lien au survol */
+}
+
 hr {
   border: 0;
   height: 1px;
