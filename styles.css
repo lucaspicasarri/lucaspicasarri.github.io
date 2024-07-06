@@ -70,7 +70,7 @@ a.people {
 }
 
 a.people:hover {
-  text-decoration: underline; /* Souligne le lien au survol */
+  color: gray;
 }
 
 hr {

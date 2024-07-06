@@ -8,89 +8,110 @@
   <link rel="stylesheet" href="styles.css">
   <title>Lucas Picasarri-Arrieta</title>
 </head>
-
-<body>
+<script>
+    function setWebPages(){
+        var authors = {
+          "jbangjensen": "https://imada.sdu.dk/u/jbj/",
+          "sbessy": "https://www.lirmm.fr/~bessy/",
+          "nbousquet": "https://perso.liris.cnrs.fr/nbousquet/",
+          "dgoncalves": "https://www.lirmm.fr/~goncalves/pmwiki/",
+          "fhavet": "http://www-sop.inria.fr/members/Frederic.Havet/",
+          "fhoersch": "https://cispa.de/en/people/c01flho",
+          "nnisse": "https://www-sop.inria.fr/members/Nicolas.Nisse/",
+          "jpardey": "https://www.researchgate.net/scientific-contributions/Johannes-Pardey-2181163794",
+          "crambaud": "https://clementrambaud.github.io/",
+          "drautenbach": "https://www.uni-ulm.de/mawi/mawi-or/mitarbeiter/drautenbach/",
+          "areinald": "https://www.lirmm.fr/~areinald/about/",
+          "isau": "https://www.lirmm.fr/~sau/",
+          "mstiebitz": "https://www.researchgate.net/profile/Michael-Stiebitz",
+        };
+        for (const [author, webpage] of Object.entries(authors)) {
+            var elements = document.getElementsByClassName(author);
+            for (const element of elements){
+                element.setAttribute("href",webpage);
+            }
+        }
+    }
+    
+</script>
+<body onload="setWebPages();">
   <header>
     <div class="container-header">
     <img src="photo.jpg" alt="Lucas Picasarri-Arrieta" class="profile-image">
+       <br>
       <h1>Lucas Picasarri-Arrieta</h1>
-      <h2>PhD Student at Université Côte d'Azur</h2>
-    </div>
-    <div class="container">
-    <p><a href="mailto:lucas.picasarri-arrieta@inria.fr">lucas.picasarri-arrieta@inria.fr</a><br>
-        Bat. Lagrange, Office L010C,<br>
-        Inria Sophia Antipolis M&eacute;diterran&eacute;e,<br>
-        2004 route des Lucioles,<br>
-        06902 Sophia Antipolis, France
-      </p>
+      <h2>PostDoctoral Researcher</h2>
+      <br>
+      <br>
     </div>
   </header>
 
   <section class="main-content">
     <div class="container">
     <h2>Bio</h2>
-	As of October 2021, I'm a PhD Student in Computer Science at <a href="http://univ-cotedazur.fr/en">Universit&eacute; C&ocirc;te D'Azur</a>
-	in the <a href="https://team.inria.fr/coati/">COATI</a> team which is a joint project-team between <a href="https://www.inria.fr/centre/sophia/">Inria Sophia Antipolis - M&eacute;diterran&eacute;e</a>
-	and the <a href="http://www.i3s.unice.fr/en">I3S</a> laboratory, under the supervision of <a href="http://www-sop.inria.fr/members/Frederic.Havet/">Frédéric Havet</a> and <a href="https://www.lirmm.fr/~bessy/">Stéphane Bessy</a>.
-	<br>
-	My main interests lie in combinatorics and theoretical computer science. In particular, I am interested in graph colouring, directed graphs, reconfiguration, extremal combinatorics and probabilistic methods applied to these areas.
-	<br>
-	</div>
-
-	<div class="container">
+<p>As of August 2024, I will be a postdoctoral fellow at the <a href="https://www.nii.ac.jp/en/">National Institute of Informatics (NII)</a> in Tokyo working with <a href="https://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi</a>.
+    I obtained my PhD (<a href="phd/manuscript.pdf">manuscript</a>, <a href="phd/slides.pdf">slides</a>) in June 2024 at <a href="http://univ-cotedazur.fr/en">Universit&eacute; C&ocirc;te D'Azur</a> (Nice), under the supervision of <a href="http://www-sop.inria.fr/members/Frederic.Havet/">Frédéric Havet</a> and <a href="https://www.lirmm.fr/~bessy/">Stéphane Bessy</a>.
+    <br>My main interests lie in combinatorics and theoretical computer science. In particular, I am interested in graph colouring, directed graphs, reconfiguration, extremal combinatorics and probabilistic methods applied to these areas.<p>
+    <hr>
+    <h2>Contact</h2>
+    <p><a href="mailto:lucas.picasarri-arrieta@inria.fr">lucas.picasarri-arrieta@inria.fr</a><br>
+        Bat. Lagrange, Office L010C,<br>
+        Inria Sophia Antipolis M&eacute;diterran&eacute;e,<br>
+        2004 route des Lucioles,<br>
+        06902 Sophia Antipolis, France
+      </p>
     <hr>
 	<h2>Research activities</h2>
-    <hr>
     <h3>International Journals</h3>
 
   <i>Submitted</i>
   <ul>
 	<li> <b><a href="https://arxiv.org/pdf/2405.05222.pdf">Brooks-type colourings of digraphs in linear time</a></b><br>
-        with D. Gonçalves and A. Reinald, 2024.
+        with <a class="people dgoncalves">D. Gonçalves</a> and <a class="people areinald">A. Reinald</a>, 2024.
     </li>
 	<li> <b><a href="https://arxiv.org/pdf/2402.12014.pdf">The 3-dicritical semi-complete digraphs</a></b><br>
-        with F. Havet and F. Hörsch, 2024.
+        with <a class="people fhavet">F. Havet</a> and <a class="people fhoersch">F. Hörsch</a>, 2024.
     </li>
 	<li> <b><a href="https://arxiv.org/pdf/2401.09202.pdf">Complexity results on the decomposition of a digraph into directed linear forests and out-stars</a></b><br>
-        with F. Hörsch, 2024.
+        with <a class="people fhoersch">F. Hörsch</a>, 2024.
     </li>
 	<li> <b><a href="https://arxiv.org/pdf/2309.17385.pdf"> Dichromatic number of chordal graphs </a> </b> <br>
-        with S. Bessy and F. Havet, 2023.
-    </li>
-    <li> <b><a href="https://arxiv.org/pdf/2306.10784.pdf"> On the minimum number of arcs in 4-dicritical oriented graphs </a> </b> <br>
-        with F. Havet and C. Rambaud, 2023.
+        with <a class="people sbessy">S. Bessy</a> and <a class="people fhavet">F. Havet</a>, 2023.
     </li>
   </ul>
 
   <i>Published</i>
 
   <ul>
+    <li> <b><a href="https://arxiv.org/pdf/2306.10784.pdf">On the minimum number of arcs in 4-dicritical oriented graphs</a></b><br>
+        with <a class="people fhavet">F. Havet</a> and <a class ="people crambaud">C. Rambaud</a>, to appear in <i>Journal of Graph Theory</i>, 2024.
+    </li>
 	<li> <b><a href="https://arxiv.org/pdf/2401.05938.pdf">Subdivisions in dicritical digraphs with large order or digirth</a></b><br>
-        with C. Rambaud, to appear in <i>European Journal of Combinatorics</i>, 2024.
+        with <a class ="people crambaud">C. Rambaud</a>, to appear in <i>European Journal of Combinatorics</i>, 2024.
     </li>
 	<li> <b><a href="https://doi.org/10.1016/j.tcs.2024.114702">Constrained Flows in Networks</a></b><br>
-        with S. Bessy and J. Bang-Jensen, in <i>Theoretical Computer Science</i>, 2024, available on <a href="https://arxiv.org/pdf/2310.01042.pdf"> ArXiv</a>.
+        with <a class="people sbessy">S. Bessy</a> and <a class="people jbangjensen">J. Bang-Jensen</a>, in <i>Theoretical Computer Science</i>, 2024, available on <a href="https://arxiv.org/pdf/2310.01042.pdf"> ArXiv</a>.
     </li>
     <li> <b><a href="https://doi.org/10.1016/j.dam.2024.05.042""> Redicolouring digraphs: directed treewidth and cycle-degeneracy </a> </b> <br>
-        with N. Nisse and I. Sau, in <i> Discrete Applied Mathematics</i>, 2024, available on <a href="https://arxiv.org/pdf/2307.06700.pdf"> ArXiv</a>.
+        with <a class="people nnisse">N. Nisse</a> and <a class="people isau">I. Sau</a>, in <i> Discrete Applied Mathematics</i>, 2024, available on <a href="https://arxiv.org/pdf/2307.06700.pdf"> ArXiv</a>.
     </li>
 	<li> <b><a href="https://doi.org/10.1016/j.disc.2024.114072">Minimum number of arcs in k-critical digraphs with order at most 2k−1</a></b><br>
-        with M. Stiebitz, in <i> Discrete Mathematics</i>, 2024, available on <a href="https://arxiv.org/pdf/2310.03584.pdf"> ArXiv</a>.
+        with <a class="people mstiebitz">M. Stiebitz</a>, in <i> Discrete Mathematics</i>, 2024, available on <a href="https://arxiv.org/pdf/2310.03584.pdf"> ArXiv</a>.
     </li>
     <li> <b><a href="https://doi.org/10.1016/j.ejc.2023.103876"> Digraph redicolouring </a> </b> <br>
-        with N. Bousquet, F. Havet, N. Nisse, and A. Reinald, in <i>European Journal of Combinatorics</i>, 2024, available on <a href="https://arxiv.org/pdf/2301.03417.pdf""> ArXiv</a>.
+        with <a class="people nbousquet">N. Bousquet</a>, <a class="people fhavet">F. Havet</a>, <a class="people nnisse">N. Nisse</a>, and <a class="people areinald">A. Reinald</a>, in <i>European Journal of Combinatorics</i>, 2024, available on <a href="https://arxiv.org/pdf/2301.03417.pdf""> ArXiv</a>.
     </li>
     <li> <b><a href="https://doi.org/10.1002/jgt.23066"> Strengthening the Directed Brooks' Theorem for oriented graphs and consequences on digraph redicolouring </a> </b> <br>
         in <i>Journal of Graph Theory</i>, 2023, available on <a href="https://arxiv.org/pdf/2301.04881.pdf"> ArXiv</a>.
     </li>
     <li> <b><a href="https://doi.org/10.37236/10866"> Unbalanced spanning subgraphs in edge labeled complete graphs </a> </b> <br>
-        with S. Bessy, J. Pardey, and D. Rautenbach, in <i>Electronic Journal of Combinatorics</i>, 2023, available on <a href="https://arxiv.org/pdf/2107.09290.pdf"> ArXiv</a>.
+        with <a class="people sbessy">S. Bessy</a>, <a class="people jpardey">J. Pardey</a>, and <a class="people drautenbach">D. Rautenbach</a>, in <i>Electronic Journal of Combinatorics</i>, 2023, available on <a href="https://arxiv.org/pdf/2107.09290.pdf"> ArXiv</a>.
     </li>
     <li> <b><a href="https://doi.org/10.37236/10610"> Factorially Many Maximum Matchings Close to the Erdős-Gallai Bound </a> </b> <br>
-        with S. Bessy, J. Pardey, and D. Rautenbach, in <i>Electronic Journal of Combinatorics</i>, 2022, available on <a href="https://arxiv.org/pdf/2108.00134.pdf"> ArXiv</a>.
+        with <a class="people sbessy">S. Bessy</a>, <a class="people jpardey">J. Pardey</a>, and <a class="people drautenbach">D. Rautenbach</a>, in <i>Electronic Journal of Combinatorics</i>, 2022, available on <a href="https://arxiv.org/pdf/2108.00134.pdf"> ArXiv</a>.
     </li>
     <li> <b><a href="https://doi.org/10.1016/j.tcs.2022.06.023"> Complexity of some arc-partition problems for digraphs </a> </b> <br>
-        with J. Bang-Jensen, S. Bessy, and D. Gonçalves, in <i>Theoretical Computer Science</i>, 2022, available on <a href="https://hal.science/hal-03699980"> HAL</a>.
+        with <a class="people jbangjensen">J. Bang-Jensen</a>, <a class="people sbessy">S. Bessy</a>, and <a class="people dgoncalves">D. Gonçalves</a>, in <i>Theoretical Computer Science</i>, 2022, available on <a href="https://hal.science/hal-03699980"> HAL</a>.
     </li>
   </ul>
 
@@ -102,7 +123,7 @@
         <i>Eurocomb'23</i>.
     </li>
     <li> <b><a href="https://link.springer.com/chapter/10.1007/978-3-031-43380-1_27"> On the minimum number of arcs in 4-dicritical oriented graphs </a> </b> <br>
-        with F. Havet and C. Rambaud, in the proceedings of <i>WG'23</i>.
+        with <a class="people fhavet">F. Havet</a> and <a class ="people crambaud">C. Rambaud</a>, in the proceedings of <i>WG'23</i>.
     </li>
   </ul>
 
@@ -143,8 +164,7 @@
 
   <hr>
   <h2>Teaching</h2>
-  <hr>
-    I am currently teaching at <a href="https://iut.univ-cotedazur.fr/">IUT Universit&eacute; C&ocirc;te D'Azur</a>.
+   <p>During my PhD, I was teaching at <a href="https://iut.univ-cotedazur.fr/">IUT Universit&eacute; C&ocirc;te D'Azur</a>.</p>
   <ul>
     <li> <b>Introduction aux services réseaux</b>, <i>lecturer (20h)</i>, 2024.
     <li> <b>Communication et fonctionnement bas niveau</b>, <i>lecturer (26h)</i>, 2024.
@@ -166,5 +186,6 @@
   </footer>
 </font>
 </div>
-</body></html>
+</body>
+</html>
 
