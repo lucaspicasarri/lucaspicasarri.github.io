@@ -106,3 +106,7 @@ hr {
   background: #ccc;
   margin: 20px 0;
 }
+
+.teaching li b {
+  color: #1f618d;
+}
