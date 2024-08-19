@@ -55,6 +55,10 @@ h1, h2 {
   margin: 0;
 }
 
+h3 {
+  font-style: italic;
+}
+
 a {
   color: #1f618d;
   text-decoration: none;
