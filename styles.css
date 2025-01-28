@@ -59,8 +59,32 @@ h3 {
   font-style: italic;
 }
 
-a {
+a{
   color: #1f618d;
+  text-decoration: none;
+}
+
+a.title {
+  color: #007FFF;
+  text-decoration: none;
+}
+
+.supervision a{
+  color: #007FFF;
+  text-decoration: none;
+}
+
+.teaching a {
+  color: #007FFF;
+  text-decoration: none;
+}
+
+.teaching li b {
+  color: #1f618d;
+}
+
+a.journal {
+  color: #808080  ;
   text-decoration: none;
 }
 
@@ -94,7 +118,7 @@ ul {
 }
 
 li {
-  margin: 10px 0;
+  margin: 10px 30px;
 }
 
 footer {
@@ -111,6 +135,10 @@ hr {
   margin: 20px 0;
 }
 
-.teaching li b {
-  color: #1f618d;
+.teaching li {
+  margin: 5px 30px;
 }
+.teaching p {
+  margin: 0px 30px;
+}
+
