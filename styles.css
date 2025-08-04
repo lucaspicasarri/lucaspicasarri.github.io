@@ -142,3 +142,11 @@ hr {
   margin: 0px 30px;
 }
 
+.papers li {
+  font-size: 0.85rem;
+}
+
+.papers li .title {
+  font-size: 1rem;
+}
+
