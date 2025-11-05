@@ -158,3 +158,12 @@ hr {
   font-size: 1rem;
 }
 
+.supervision li {
+  font-size: 0.85rem;
+}
+
+.supervision li .title {
+  font-size: 1rem;
+}
+
+
