@@ -167,3 +167,24 @@ hr {
 }
 
 
+
+.two-columns {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+  }
+}
