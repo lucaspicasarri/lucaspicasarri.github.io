@@ -188,3 +188,16 @@ hr {
     flex-direction: column;
   }
 }
+
+.delta-tilde {
+    position: relative;
+    display: inline-block;
+}
+
+.delta-tilde .tilde {
+    position: absolute;
+    left: 0.18em;
+    top: -0.2em;
+    font-size: 0.8em;
+    line-height: 1;
+}
