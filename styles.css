@@ -39,6 +39,11 @@ header a {
   .profile-image {
     width: 300px;   
   }
+  .container-header h1{
+    margin: 103px;
+    margin-left:0px;
+    margin-right:200px;
+  }
 }
 
 .profile-image {
